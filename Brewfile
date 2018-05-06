@@ -1,0 +1,5 @@
+brew 'sdl2'
+brew 'openal-soft'
+brew 'jpeg-turbo'
+brew 'libpng'
+brew 'libmad'
