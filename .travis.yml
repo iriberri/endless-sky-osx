@@ -1,4 +1,6 @@
-os: osx language: c++ before_install:
+os: osx 
+language: c++ 
+before_install:
   - brew update
   - brew bundle
   - brew uninstall libjpeg --ignore-dependencies # libjpeg is installed by default, which makes xcode use the libjpeg headers instead of libjpeg-turbo
