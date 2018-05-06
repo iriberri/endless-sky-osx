@@ -4,7 +4,7 @@ before_install:
   - brew update
   - brew bundle
   - brew uninstall libjpeg --ignore-dependencies
-  - git config --local user.name "MCOfficer-jenkins"
+  - git config --local user.name "MCOfficer"
   - git config --local user.email "mcofficer@gmx.de"
   - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 script: xcodebuild
@@ -12,7 +12,7 @@ deploy:
   provider: releases
   api_key:
     secure: oeWF9bGh/XLblRF898te7S3kFaK9XYMRTa70XFXdXtHbfP8x+Y18Ted2paxVHxLOWTjYFdiWREr8qaoxO94w8e0B4ncu5YXG1XoyNH2AzuNEXUllyJ1kL6B4M5Wo9kHudaNBYE9NHTSyJ4T0PvTVDHj5JhzHjNKq53KMLcyPImwZjyYDl/yrNBO6H5cvhEs8yib78QKWf17GePyEk/xlcR8RjEsimjEdTLf5DbsL6eHfNXfROFWVzIuG5qMwz/RAPWcsaDlpx9uBmwuNSpM2NwGd88FVXcE/FQaeShpfIgxrt0Vlzs+RsH/dX7S7We/dfiT1ypxiDHfRkGayl20ymn29gLeWV8kuTWYl+mbQj92qarWLtJKAA3IkAe8grb4ICfW7WB7btjlhIqc9yS+WMCOPcJgzoc5jCcYL2z3VOLpSdXHK3153yhIDpO6MmkKSrrbHfj1h5Zz8KARLLFehYUMpblC06tLtsoaZAUnbNBBmGrBSmK6+i7jT1NXrKBS5MBVygIaBOc0Hji2Pz9G59QZvG0/t8UX9YQXfJklOdzypnM49Idv95khJuCS8iqNqCKBunyzPISQMXDGGrPMBMudwoHAJ6OXgKB7ZqykWWyiRIp7JWx6AKSeZ8OXVx1eR8/Cv45npRH4ILOk/U9RYjF6ORQGrvwWUfE2QlxBs4wc=
-  file: build/Release/EndlessSky.app
+  file: "build/Release/EndlessSky.app"
   skip_cleanup: true
   on:
     repo: ES-Builds/endless-sky-osx
