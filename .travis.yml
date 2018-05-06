@@ -7,7 +7,7 @@ before_install:
   - git config --local user.name "MCOfficer-jenkins"
   - git config --local user.email "mcofficer@gmx.de"
   - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-script: xcodebuild -archivePath 
+script: xcodebuild
 deploy:
   provider: releases
   api_key:
