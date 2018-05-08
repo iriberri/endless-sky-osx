@@ -20,3 +20,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: ES-Builds/endless-sky-osx
+    tags: true
