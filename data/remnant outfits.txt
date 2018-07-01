@@ -178,6 +178,8 @@ outfit "EMP Torpedo"
 
 outfit "EMP Torpedo Bay"
 	category "Secondary Weapons"
+	licenses
+		Remnant
 	cost 80000
 	thumbnail "outfit/emp torpedo bay"
 	"mass" 9
