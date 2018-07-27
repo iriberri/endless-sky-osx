@@ -14,7 +14,9 @@ script:
   - ls -al build/Release/EndlessSky.app
 deploy:
   provider: releases
-  api_key: "xxxxxxxx"
+  edge:
+    branch: ci-releases_debug
+  api_key: $GITHUB_TOKEN
   file:
     - build/Release/EndlessSky.app
   skip_cleanup: true
