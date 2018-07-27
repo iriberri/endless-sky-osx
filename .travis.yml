@@ -11,7 +11,7 @@ script:
   - xcodebuild
   - ls -al build
   - ls -al build/Release
-  - ls -al build/Release/EndlessSky.app
+  - ls -alR build/Release/EndlessSky.app
 deploy:
   provider: releases
   edge:
