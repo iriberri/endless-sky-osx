@@ -18,7 +18,7 @@ deploy:
     branch: ci-releases_debug
   api_key: $GITHUB_TOKEN
   file:
-    - build/Release/EndlessSky.app
+    - "./build/Release/EndlessSky.app"
   skip_cleanup: true
   on:
     repo: iriberri/endless-sky-osx
